@@ -2,9 +2,21 @@ class Rectangle:
     def __init__(self, width, height):
         self.width = width
         self.height = height
+        print(f"Rectangle created: {width}x{height}")
     
     def area(self):
-        return self.width * self.height
+        result = self.width * self.height
+        print(f"Area: {self.width} * {self.height} = {result}")
+        return result
     
     def perimeter(self):
-        return 2 * (self.width + self.height)
+        result = 2 * (self.width + self.height)
+        print(f"Perimeter: 2 * ({self.width} + {self.height}) = {result}")
+        return result
+
+
+
+r = Rectangle(5, 3)
+r.area()
+r.perimeter()
+print()
